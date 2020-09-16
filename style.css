@@ -1,0 +1,44 @@
+body {
+  margin: 0px ;
+}
+.navbar
+{
+  background-color: transparent;
+  position: fixed;
+}
+
+.display-image {
+  /* The image used */
+  background-image: url("background.jpg" );
+  height: 90vh;
+  width: 100vw;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+#img-about
+{
+  position: relative;
+  border-radius: 50%;
+  
+}
+#about-me
+{
+  text-align: center;
+  color: white;
+  font-size: 50vem;
+}
+.about
+{
+  
+  width:100vw ;
+  height: 50vh;
+  background-color: black;
+  
+}
