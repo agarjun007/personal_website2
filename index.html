@@ -1,67 +1,248 @@
 <!DOCTYPE html>
 <html>
     <head>
-<title>Personal Website</title>
-   <link href="style.css" type="text/css" rel="stylesheet">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-</head>
+        <title>
 
-    <body>
-      <div class=" display-image  col-md-12 col-6 col-12">
-        
-        
+        </title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />    </head>
+
+<body>
+    <!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav  ml-auto  ">
+      <li class="nav-item ">
+        <a class="nav-link active text-white" href="#">Home </a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-white" href="#about-right">About Me</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-white" href="#services">Services</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-white" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-white" href="#contact">Contact Me</a>
+      </li>
+      
+      
+    </ul>
+  </div>
+</nav>
+
+<!--carousel-->
+
+<div id="carousel" class="carousel slide" data-ride="carousel" >
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="slide2.jpg" class="d-block w-100" alt="..." >
+        <div class="carousel-caption d-none d-md-block ">
+          <h5 class="slide-text">Hi, I'm ARJUN.A.G</h5>
+          <p>I'm a python Developer.</p>
+        </div>
+      </div>
+      
+
+  </div>
+</div>
+<!--about-->
+<section class="about bg-dark ">
+  <div class="container ">
+    <div class="row">
+      <div class="col md-6">
+
+        <div class="about-img">
           
+          <img class="man" src="about-img.JPG" alt="">
 
-                    <nav class="navbar navbar-expand-lg navbar-dark">
-                        
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                      
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                          <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                              <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item active">
-                              <a class="nav-link text-white" href="#">Skills</a>
-                            </li>
-
-                            <li class="nav-item active">
-                                <a class="nav-link text-white" href="#">Education</a>
-                              </li>
-                              <li class="nav-item active">
-                                <a class="nav-link text-white" href="#">Experience</a>
-                              </li>
-                              <li class="nav-item active">
-                                <a class="nav-link text-white" href="#">My projects</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link text-white" href="#">Contact Me</a>
-                                 </li>
-                                                       
-                          </ul>
-                           
-                        </nav>
-                                  
-                                      
-                        
-                                            
-                
-        
+        </div>
+      </div>
+      <br>
+      <div class="col-md-6 " id="about-right">
+        <h2 class="color-3 text-white"><b>ABOUT ME</b></h2>
+        <p class="about-text p-first  text-primary">
+          I'm Interested In Tech Field And I Want To Explore This. 
+          I've Experience In Software Testing Field And In Between My Career There Was A Gap In It Field.
+           Now I'm Preparing For A Come Back And I'm Improving My Coding Skills And Learning New Programming Languages.
+           By The Part Of It I Accidently Seen CROSSROADS And Now I'm Following Their Tuitorials.
+           I'm Now Actively Looking For Tech Jobs.
+        </p>
+        <h3><button class="btn btn-info">Hire Me</button></h3>
+      </div>
     </div>
-    <div class=" about  container-fluid col-md-12 col-6 col-12">
-        
-          <h1 id="about-me">ABOUT ME</h1>
-            <img id = "img-about" src="data:image/jpeg;base64,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" alt="Avatar">
-        
+  </div>
+</section>
 
-   
-        
+<!--service -->
+
+<div id="services" class="services col-md-12"><h2><b>Services</b></h2></div>
+<div class="row row-cols-1 row-cols-md-2">
+  <div class="col mb-4">
+    <div class="card">
+      <img src="coding_card.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Coding</h5>
+        <p class="card-text">I Can Do C And Cpp Coding For Small Projects.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="web_card.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Web Design</h5>
+        <p class="card-text">I Can Do Static Website Within Minimum Time.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="electronics_card.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Electronics Projects</h5>
+        <p class="card-text">I can help you in electronics projects.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="email_card.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Email Scrapping</h5>
+        <p class="card-text">I Can Collect Emails For Your Buisness,as per requirements</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- skils -->
+<div class="skillBody">
+<div id="skills" class="skils"><h2><b>Skills</b></h2></div>
+<h6 class="progress-heading" id="skillsHead">C programming</h6>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%"><span>95%</span></div>
+  </div>
+  <h6 class="progress-heading" id="skillsHead">Cpp programming</h6>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span>80%</span></div>
+  </div>
+  <h6 class="progress-heading " id="skillsHead">Java</h6>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"><span>85%</span></div>
+  </div>
+  <h6 class="progress-heading " id="skillsHead">Web designing</h6>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"><span>70%</span></div>
+  </div>
+  <h6 class="progress-heading " id="skillsHead">Manual Testing</h6>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"><span>75%</span></div>
+  </div>
+</div>
+
+<!--Contact form-->
+<div id="contact" class="container-fluid text-white bg-primary"><h2><b>Contact Me</b></h1>
+  <div class="container bg-primary">
+<div class="contact-form text-white col-md-12 bg-primary">
+<form >
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="inputAddress">First Name</label>
+      <input type="text" class="form-control" placeholder="Arjun"s id="name">
+    </div>
+    <div class="form-group col-md-12">
+      <label for="inputAddress2">Last Name</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="A G">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail4">Email</label>
+    <input type="email" class="form-control"  placeholder="Email" id="email">
+    
+  </div>
+  
+  <div class="form-group">
+    <label for="FormControlTextarea3">Message</label>
+    <textarea class="form-control"  rows="7" placeholder="type your message" id="message"></textarea>
+  </div>
+  
+  <button onclick="ValidateForm()"  type="submit" class="btn btn-success">Submit</button>
+</form>
+</div>
+</div>
 
 </div>
+<!-- Footer -->
+<footer class="page-footer font-small bg-dark pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      
+      
+      <!--Linkedin-->
+<a  class="li-ic mr-3" role="button"><a  href="https://www.linkedin.com/in/agarjun007/" class="fab fa-lg fa-linkedin-in" target="_blank"></a></a>
+<!--Instagram-->
+<a class="ins-ic mr-3" role="button"><a  href="https://www.instagram.com/arjun.a.g/"class="fab fa-lg fa-instagram" target="_blank"></a></a>
+<!--Facebook-->
+<a  class="fb-ic mr-3" role="button"><a href="https://www.facebook.com/arjunkodankara" class="fab fa-lg fa-facebook-f" target="_blank"></a></a>
+
+     
+    </ul>
+    <!-- Social buttons -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://agarjun007.github.io/personal_website/"> ARJUN.A.G</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+<script type="text/javascript">
+function ValidateForm()
+{
+  // console.log("entering to the function")
+var name = document.getElementById("name").value;
+console.log(name);
+var email = document.getElementById('email').value;
+var message = document.getElementById('message').value;
+if(name===""|| email===""||message==="")
+{
+  alert ("required");
+  return false;
+  
+}else{
+  return true;
+}
+}
+</script>
+
+
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    </body>
+
+</body>
+
 </html>
