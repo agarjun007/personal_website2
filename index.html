@@ -2,8 +2,9 @@
 <html>
     <head>
         <title>
-
+          ARJUN.A.G
         </title>
+        <link rel="icon" href="slide2.JPG" type="image/icon type">
 
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="style.css" type="text/css" rel="stylesheet">
@@ -211,7 +212,7 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://agarjun007.github.io/personal_website/"> ARJUN.A.G</a>
+    <a href="https://agarjun007.github.io/personal_website/" target="blank"> ARJUN.A.G</a>
   </div>
   <!-- Copyright -->
 
@@ -223,15 +224,26 @@ function ValidateForm()
 {
   // console.log("entering to the function")
 var name = document.getElementById("name").value;
-console.log(name);
+
 var email = document.getElementById('email').value;
 var message = document.getElementById('message').value;
-if(name===""|| email===""||message==="")
+if(name==="")
 {
-  alert ("required");
+  alert ("Please Enter your Name");
   return false;
   
-}else{
+}else if(email==="")
+{
+  alert ("Please Enter your Email");
+  return false;
+  
+}else if(message==="")
+{
+  alert ("Please Enter your Message");
+  return false;
+  
+}
+else{
   return true;
 }
 }
